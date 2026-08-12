@@ -1,0 +1,9 @@
+services:
+  chicks-delivery-sms:
+    build: .
+    container_name: skylark-chicks-delivery-sms
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      TZ: Asia/Kolkata
